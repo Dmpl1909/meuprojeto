@@ -1,0 +1,60 @@
+/* Contact.css - Estilo para o formulário de contato */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  min-width: 320px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #7c3aed;
+  outline: none;
+}
+
+.contact-form input[type="submit"] {
+  background: linear-gradient(90deg, #7c3aed 0%, #00c6fb 100%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(124,58,237,0.08);
+}
+
+.contact-form input[type="submit"]:hover {
+  background: linear-gradient(90deg, #00c6fb 0%, #7c3aed 100%);
+}
+
+.contact-form p {
+  font-size: 15px;
+  color: #444;
+  word-break: break-word;
+  margin-top: 8px;
+}
