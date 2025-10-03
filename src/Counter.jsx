@@ -9,6 +9,8 @@ function Counter() {
   //Declara uma nova variavel de estado chamada "count"
   //useState(0) inicializa o estado com o valor 0
   const [count, setCount] = useState(0);
+  // barra de progresso
+  const progress = (count / 10) * 100;
 
   return (
     // Card envolvente com estilo melhorado
@@ -20,7 +22,12 @@ function Counter() {
       <div className="text-center mb-6">
         <span className="text-4xl font-bold text-gray-800">{count}</span>
       </div>
-      
+      <div className="w-full bg-gray-200 rounded-full h-4 mb-6">
+        <div 
+          className="bg-blue-500 h-4 rounded-full transition-all duration-300"
+          style={{ width: `${progress}%` }}
+        ></div>
+      </div>
       {/* Layout de botões melhorado */}
       <div className="flex items-center gap-2 mt-4 justify-center">
         {/* Botão primário */}
